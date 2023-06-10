@@ -1,0 +1,9 @@
+@use "../media" as *;
+.container{
+    width: 95%;
+    margin: 0px auto;
+    height: fit-content;
+   @include media("tablet"){
+    width: 80%;
+   }
+}

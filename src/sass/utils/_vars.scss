@@ -1,0 +1,10 @@
+$breakpoint:(
+    "mobile":400p,
+    "tablet":756px,
+    "desktop":1400
+);
+@mixin media($value){
+    @media (max-wdth:map-get($breakpoint,value)) {
+      @content;
+    }
+}

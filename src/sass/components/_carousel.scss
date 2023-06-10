@@ -1,0 +1,55 @@
+@use "../media" as *;
+.carousel-container{
+  margin: 0px auto;
+  max-width: 90%;
+  background-color: hsl(0, 0%, 95%);
+  @include media("desktop"){
+    max-width: 85%;
+  }
+}
+.carousel{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+
+}
+.slider-left,.slider-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: center;
+  background-color: black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  i{
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  @include media("tablet"){
+    display: flex;
+  }
+}
+.carousel-body{
+    flex-grow: 1;
+    height: fit-content;
+    &{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    overflow-X: auto;
+    @include media("tablet"){
+      overflow-X: hidden;
+    }
+
+    gap: 10px;
+    .carousel-item{
+      flex-shrink: 0;
+
+    }
+   }
+}

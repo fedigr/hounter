@@ -1,0 +1,41 @@
+@use "../layout"as *;
+@use "../media" as *;
+.home-header{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 0px;
+  .bg img{
+      position: absolute;
+      z-index: 1;
+      width: 80%;
+      right: 0px;
+      top: 0px;
+      border-radius:  40% 0 20% 40%;
+      max-height: 400px;
+      @include media("tablet"){
+
+      }
+  }
+}
+
+.navbar{
+  margin: 0px auto;
+   width: 95%;
+   height: 70px;
+   background-color: transparent;
+   position: relative;
+   z-index: 5;
+   z-index: 5;
+   display: flex;
+   align-items: center;
+  justify-content: space-between;
+}
+.navbar-toggle{
+  background-color: transparent;
+  svg{
+    width: 30px;
+    height: 30px;
+  }
+}
+
