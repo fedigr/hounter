@@ -1,0 +1,114 @@
+*, *::before, *::after {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+
+/* color variables*/
+/*front famely*/
+.container {
+  width: 95%;
+  margin: 0px auto;
+  height: fit-content;
+}
+@media (min-width: 756px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.carousel-container {
+  margin: 0px auto;
+  max-width: 90%;
+  background-color: hsl(0, 0%, 95%);
+}
+@media (min-width: 1400) {
+  .carousel-container {
+    max-width: 85%;
+  }
+}
+
+.carousel {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-left, .slider-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-self: center;
+  background-color: black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.slider-left i, .slider-right i {
+  color: white;
+  font-size: 1.2rem;
+}
+@media (min-width: 756px) {
+  .slider-left, .slider-right {
+    display: flex;
+  }
+}
+
+.carousel-body {
+  flex-grow: 1;
+  height: fit-content;
+}
+.carousel-body {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  flex-wrap: nowrap;
+  overflow-X: auto;
+  gap: 10px;
+}
+@media (min-width: 756px) {
+  .carousel-body {
+    overflow-X: hidden;
+  }
+}
+.carousel-body .carousel-item {
+  flex-shrink: 0;
+}
+
+.btn-none {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+}
+
+.btn {
+  padding: 0.7rem 1.1rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+}
+
+.btn-green {
+  background-color: hsl(160, 84%, 39%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rounded {
+  border-radius: 2rem;
+}
+
+.fedi {
+  width: 300px;
+  height: 200px;
+  border-radius: 2rem;
+  background-color: red;
+  margin: 0.4rem 0.4rem;
+}
+
+/*# sourceMappingURL=index.css.map */

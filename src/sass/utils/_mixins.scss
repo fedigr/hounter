@@ -1,0 +1,6 @@
+@use "vars" as *;
+
+@mixin font($value){
+    font-family: $font;
+    font-weight: map-get($font-weight,$value);
+  }

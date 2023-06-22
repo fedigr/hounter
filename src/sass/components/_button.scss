@@ -1,0 +1,17 @@
+@use "../utils" as * ;
+.btn-none{
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+}
+.btn{
+    padding: 0.7rem 1.1rem;
+    @include font(semibold);
+}
+.btn-green{
+    background-color: $green;
+    color: $white;
+}
+.rounded{
+    border-radius: 2rem;
+}

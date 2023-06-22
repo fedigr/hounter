@@ -1,0 +1,18 @@
+@use "../media" as *;
+.navbar{
+    position: absolute;
+    top: 10px;
+    z-index: 5;
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    left: 5%;
+    justify-content: space-between;
+    *{
+        background-color: transparent;
+    }
+
+    @include media("tablet"){
+
+    }
+}

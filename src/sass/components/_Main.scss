@@ -1,0 +1,40 @@
+@use "../utils" as *;
+.main-nav{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: fit-content;
+   gap: 20px;
+
+   &>.main-nav-title{
+    position: relative;
+     color: $orange;
+     @include font(regular);
+     &::before{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $orange;
+        left: -35px;
+        top: 50%;
+     }
+   }
+}
+
+.nav-links{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 50px;
+    & .btn{
+        border: 2px solid $light;
+        color: $dark;
+        transition: border 0.3ms ease;
+        &:hover{
+            background-color: $light-green;
+            color:$green;
+            border: 2px solid transparent;
+        }
+
+    }
+}
